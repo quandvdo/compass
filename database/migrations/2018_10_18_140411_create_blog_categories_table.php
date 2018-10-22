@@ -18,6 +18,7 @@ class CreateBlogCategoriesTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->boolean('isActive')->default(true);
+            $table->string('slug');
         });
     }
 
