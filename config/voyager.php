@@ -183,13 +183,13 @@ return [
         'add_menu_item' => true,
 
         // which menu add item to
-        'default_menu' => 'admin',
+        'default_menu' => 'backend',
 
         // When a BREAD is added, create the related Permission.
         'add_permission' => true,
 
         // which role add premissions to
-        'default_role' => 'admin',
+        'default_role' => 'r00t',
     ],
 
     /*
@@ -201,7 +201,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#654321',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 

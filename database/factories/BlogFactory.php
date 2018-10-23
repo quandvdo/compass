@@ -3,7 +3,7 @@
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\Blog\Blog::class, function (Faker $faker) {
-    $user = \App\Models\Account\User::select('id')->inrandomOrder()->first();
+    $user = \App\User::select('id')->inrandomOrder()->first();
     $category = \App\Models\Activity\Category::select('id')->inrandomOrder()->first();
     $title = $faker->sentence($nbWords = rand(4,10), $variableNbWords = true);
     return [

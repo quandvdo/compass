@@ -11,7 +11,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Account\User::create([
+        \App\User::create([
             'name' => 'Quan Do',
             'country' => 'vn',
             'email' => 'quandvdo@gmail.com',

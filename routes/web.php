@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('database', function(){
+   return \Illuminate\Support\Facades\Artisan::call('migrate',['--seed'=>true]) ;
+});
 
 Auth::routes();
 
